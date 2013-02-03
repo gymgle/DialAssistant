@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">拨号助手</string>
+	<string name="btnOk">开始拨号</string>
+	<string name="desc">提示：\n\t重复拨号时切换到拨号助手，点击“停止重拨”以停止重复拨号。</string>
+	<string name="phoneNum">电话号码：</string>
+	<string name="looptimes">拨号次数：</string>
+	<string name="hintpn">请输入</string>
+	<string name="hinttm">请输入</string>
+	<string name="chDeadloop">一直拨</string>
+	<string name="btnCancel">停止重拨</string>
+	<string name="menu_settings">Settings</string>
+
+</resources>
