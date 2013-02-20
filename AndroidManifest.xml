@@ -1,39 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gymgle.loopcaller"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="4"
+    android:versionName="@string/version_name" >
 
-    <uses-sdk
-        android:minSdkVersion="7"
-        android:targetSdkVersion="16" />
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.gymgle.loopcaller.MainActivity"
-            android:label="@string/app_name" >
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:name="com.gymgle.loopcaller.DialAssistant" android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <service
-            android:name="LoopCallService"
-            android:icon="@drawable/ic_launcher">
+
+        <service android:name="LoopCallService" android:icon="@drawable/ic_launcher" android:exported="false">
 			<intent-filter>
 				<category android:name="android.intent.category.DEFAULT"></category>
 				<action android:name="StopLoopCallService"></action>
 			</intent-filter>
 		</service>
-		
     </application>
-    
-	<uses-permission android:name="android.permission.CALL_PHONE" />
-	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
 </manifest>

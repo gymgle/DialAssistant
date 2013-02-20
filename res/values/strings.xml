@@ -11,6 +11,7 @@
 	<string name="chDeadloop">一直拨</string>
 	<string name="btnCancel">停止重拨</string>
 	<string name="menu_about">关于</string>
-	<string name="item_about">拨号助手 v1.1\nGoogle Code:\nhttps://dial-assistant.googlecode.com/\nGithub源码:\nhttps://github.com/gymgle/DialAssistant</string>
+	<string name="item_about">\nGoogle Code:\nhttps://dial-assistant.googlecode.com/\nGithub源码:\nhttps://github.com/gymgle/DialAssistant</string>
+	<string name="version_name">1.1.0.1</string>
 
 </resources>
