@@ -3,15 +3,15 @@
 
 	<string name="app_name">拨号助手</string>
 	<string name="btnOk">开始拨号</string>
-	<string name="desc">提示：\n\t重复拨号时切换到拨号助手，点击“停止重拨”以停止重复拨号。</string>
+	<string name="desc">提示：\n\t拨打电话时，停止重复拨打请点击屏幕上的“停止重拨”。</string>
 	<string name="phoneNum">电话号码：</string>
 	<string name="looptimes">拨号次数：</string>
 	<string name="hintpn">请输入</string>
 	<string name="hinttm">请输入</string>
 	<string name="chDeadloop">一直拨</string>
-	<string name="btnCancel">停止重拨</string>
+	<string name="txtFloating">停止重拨</string>
 	<string name="menu_about">关于</string>
 	<string name="item_about">\nGoogle Code:\nhttps://dial-assistant.googlecode.com/\nGithub源码:\nhttps://github.com/gymgle/DialAssistant</string>
-	<string name="version_name">1.1.0.1</string>
+	<string name="version_name">1.2.0.0</string>
 
 </resources>

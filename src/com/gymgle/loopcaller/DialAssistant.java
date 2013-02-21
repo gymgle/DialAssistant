@@ -15,12 +15,10 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class DialAssistant extends Activity {
 
 	private Button mBtnOK;
-	private Button mBtnCancel;
 	private EditText mTxtPhoneNumber;
 	private EditText mTxtLoopTimes;
 	private CheckBox mCbDeadLoop;
@@ -32,7 +30,6 @@ public class DialAssistant extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		mBtnOK = (Button) findViewById(R.id.btnOk);
-		mBtnCancel = (Button) findViewById(R.id.btnCancel);
 		mTxtPhoneNumber = (EditText) findViewById(R.id.etPhoneNumber);
 		mTxtLoopTimes = (EditText) findViewById(R.id.etLoopTimes);
 		mCbDeadLoop = (CheckBox) findViewById(R.id.cbDeadLoop);
@@ -40,7 +37,6 @@ public class DialAssistant extends Activity {
 		EventListener listener = new EventListener();
 		mCbDeadLoop.setOnCheckedChangeListener(listener);
 		mBtnOK.setOnClickListener(listener);
-		mBtnCancel.setOnClickListener(listener);
 		
 		readConfig();
 	}
@@ -107,12 +103,6 @@ public class DialAssistant extends Activity {
 				stopService(intent);
 				//Start service
 				startService(intent);
-			}
-			
-			if (arg0.getId() == R.id.btnCancel) {
-				Intent intent = new Intent("StopLoopCallService");
-				stopService(intent);
-				Toast.makeText(getApplicationContext(), "“—Õ£÷π÷ÿ≤¶", Toast.LENGTH_SHORT).show();
 			}
 		}
 	}

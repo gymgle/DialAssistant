@@ -83,21 +83,6 @@
 			    android:text="@string/btnOk">
 			</Button>
 		</TableRow>
-
-		<TableRow
-		    android:id="@+id/TableRow05"
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:layout_marginTop="5dp"
-		    android:gravity="center_horizontal">
-			<Button
-			    android:id="@+id/btnCancel"
-			    android:layout_width="fill_parent"
-			    android:layout_height="wrap_content"
-			    android:layout_span="2"
-			    android:text="@string/btnCancel">
-			</Button>
-		</TableRow>
 	</TableLayout>
 
 	<TextView
