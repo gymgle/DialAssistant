@@ -12,6 +12,6 @@
 	<string name="txtFloating">停止重拨</string>
 	<string name="menu_about">关于</string>
 	<string name="item_about">\nGoogle Code:\nhttps://dial-assistant.googlecode.com/\nGithub源码:\nhttps://github.com/gymgle/DialAssistant</string>
-	<string name="version_name">1.2.0.0</string>
+	<string name="version_name">1.2.0.1</string>
 
 </resources>

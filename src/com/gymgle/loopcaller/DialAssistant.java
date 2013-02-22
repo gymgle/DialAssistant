@@ -111,6 +111,7 @@ public class DialAssistant extends Activity {
 		ConfigHelper helper = new ConfigHelper();
 		mTxtPhoneNumber.setText(helper.readPhoneNum());
 		mTxtLoopTimes.setText(helper.readLoopTimes());
+		mCbDeadLoop.setChecked(helper.readCbStatus());
 	}
 	
 	private void writeConfig() {
@@ -119,6 +120,7 @@ public class DialAssistant extends Activity {
 		ConfigHelper helper = new ConfigHelper();
 		helper.writePhoneNum(phone);
 		helper.writeLoopTimes(times);
+		helper.writeCbStatus(mCbDeadLoop.isChecked());
 	}
 	
 	class ConfigHelper {
@@ -137,6 +139,10 @@ public class DialAssistant extends Activity {
 			return info.getString("LOOPTIMES", "");
 		}
 		
+		boolean readCbStatus() {
+			return info.getBoolean("ISCHECKED", true);
+		}
+		
 		void writePhoneNum(String phone) {
 			Editor edit = info.edit();
 			edit.putString("PHONENUMBER", phone);
@@ -146,6 +152,12 @@ public class DialAssistant extends Activity {
 		void writeLoopTimes(String times) {
 			Editor edit = info.edit();
 			edit.putString("LOOPTIMES", times);
+			edit.commit();
+		}
+		
+		void writeCbStatus(boolean status) {
+			Editor edit = info.edit();
+			edit.putBoolean("ISCHECKED", status);
 			edit.commit();
 		}
 	}
