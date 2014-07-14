@@ -2,21 +2,19 @@
 <LinearLayout
     android:id="@+id/LinearLayout01"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent"
-	android:layout_height="fill_parent"
-	android:paddingLeft="5dp"
-	android:paddingRight="5dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingLeft="12dp"
+	android:paddingRight="12dp"
 	android:orientation="vertical">
 
-	<TableLayout
-	    android:id="@+id/TableLayout01"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:shrinkColumns="0"
-		android:stretchColumns="1"
-		android:layout_marginTop="10dp">
+    <TableLayout
+        android:id="@+id/TableLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
 
-		<TableRow
+        <TableRow
 		    android:id="@+id/TableRow01"
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content">
@@ -24,13 +22,13 @@
 			    android:id="@+id/txtPhoneNumber"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
-			    android:gravity="end"
+			    android:gravity="right"
 			    android:text="@string/phoneNum">
 			</TextView>
 			<EditText
 			    android:id="@+id/etPhoneNumber"
 			    android:inputType="phone"
-				android:layout_width="fill_parent"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="@string/hintpn">
 			</EditText>
@@ -44,53 +42,52 @@
 			    android:id="@+id/txtLooptimes"
 			    android:layout_width="wrap_content"
 			    android:layout_height="wrap_content"
-			    android:gravity="end"
+			    android:gravity="right"
 			    android:text="@string/looptimes">
 			</TextView>
 			<EditText
 			    android:id="@+id/etLoopTimes"
 			    android:inputType="number"
-				android:layout_width="fill_parent"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:hint="@string/hinttm">
 			</EditText>
 		</TableRow>
-
-		<TableRow
-		    android:id="@+id/TableRow03"
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:gravity="end"
-		    android:paddingRight="20dp">
+    </TableLayout>
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="right"
+	    android:paddingRight="12dp" >
 		    <CheckBox
 		        android:id="@+id/cbDeadLoop"
-		        android:layout_width="fill_parent"
+		        android:layout_width="wrap_content"
 		        android:layout_height="wrap_content"
-		        android:text="@string/chDeadloop">
-		    </CheckBox>
-		</TableRow>
+		        android:text="@string/chDeadloop" >
+			</CheckBox>
+	</LinearLayout>
 
-		<TableRow
-		    android:id="@+id/TableRow04"
-		    android:layout_width="fill_parent"
-		    android:layout_height="wrap_content"
-		    android:gravity="center_horizontal">
-			<Button
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    	<Button
 			    android:id="@+id/btnOk"
-			    android:layout_width="fill_parent"
+			    android:layout_width="match_parent"
 			    android:layout_height="wrap_content"
-			    android:layout_span="2"
-			    android:text="@string/btnOk">
+			    android:text="@string/btnOk" >
 			</Button>
-		</TableRow>
-	</TableLayout>
-
+	</LinearLayout>
+	
 	<TextView
-	    android:id="@+id/txtDesc"
-	    android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:layout_marginTop="10dp"
-		android:text="@string/desc">
+		    android:id="@+id/txtDesc"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="bottom|center"
+		    android:paddingBottom="12dp"
+		    android:text="@string/desc" >
 	</TextView>
 
 </LinearLayout>

@@ -51,7 +51,7 @@ public class LoopCallService extends Service {
 			public void onClick(View v) {
 				Intent intent = new Intent("StopLoopCallService");
 				stopService(intent);
-				Toast.makeText(getApplicationContext(), "“—Õ£÷π÷ÿ≤¶", Toast.LENGTH_SHORT).show();
+				Toast.makeText(getApplicationContext(), R.string.hintstoped, Toast.LENGTH_SHORT).show();
 			}
 		});
 		
